@@ -35,5 +35,7 @@ public class HttpClient {
 			}
 			Thread.currentThread().sleep(50);
 		}
+		System.out.println(sb.toString());
+		socket.close();
 	}
 }
