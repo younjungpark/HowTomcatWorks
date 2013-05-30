@@ -24,6 +24,7 @@ public class HttpClient {
 		out.println();
 		boolean loop = true;
 		StringBuffer sb = new StringBuffer(8096);
+		
 		while (loop) {
 			if (in.ready()) {
 				int i= 0;
@@ -35,7 +36,9 @@ public class HttpClient {
 			}
 			Thread.currentThread().sleep(50);
 		}
+		
 		System.out.println(sb.toString());
 		socket.close();
 	}
+	
 }
