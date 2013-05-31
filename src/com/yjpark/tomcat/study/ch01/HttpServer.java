@@ -36,6 +36,7 @@ public class HttpServer {
 			OutputStream output = null;
 			
 			try {
+				System.out.println("waiting for client....");
 				socket = serverSocket.accept();
 				input = socket.getInputStream();
 				output = socket.getOutputStream();
